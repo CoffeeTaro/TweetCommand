@@ -12,12 +12,30 @@ macOS Sierra 10.12.5, Ubuntu 16.04で動作確認済み
 
 ### コンパイル
 必要があればコンパイルする  
+main.goのあるディレクトリで下記を実行
+
+
 ```
+# ダウンロード
+$ git clone http://github.com/CoffeeTaro/TweetCommand
+Cloning into 'TweetCommand'...
+remote: Counting objects: 12, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 12 (delta 2), reused 12 (delta 2), pack-reused 0
+Unpacking objects: 100% (12/12), done.
+Checking connectivity... done.
+$ ls
+TweetCommand
+$ cd TweetCommand/
+$ ls
+README.md  main.go  tweet-macOS
 $ go version
-go version go1.8 darwin/amd64
-
+go version go1.8.1 linux/amd64
+# コンパイル: tweet-ubuntuというファイル名でコンパイル
+$ go build -o tweet-ubuntu
+$ ls
+README.md  main.go  tweet-macOS  tweet-ubuntu
 ```
-
 
 ### 環境変数の設定
 .bashrcまたは.bash_profileに下記を記述  
@@ -68,6 +86,6 @@ $ which tweet
 ## 実行例
 
 ```
-echo hoge | tweet
+$ echo hoge | tweet
 ```
 
