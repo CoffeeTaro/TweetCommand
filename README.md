@@ -9,6 +9,16 @@ Go言語で記述されているので，Windowsでもコンパイルしてや�
 macOS Sierra 10.12.5, Ubuntu 16.04で動作確認済み
 
 ## 準備
+
+### コンパイル
+必要があればコンパイルする  
+```
+$ go version
+go version go1.8 darwin/amd64
+
+```
+
+
 ### 環境変数の設定
 .bashrcまたは.bash_profileに下記を記述  
 .bash_profileに書くことを推奨  
@@ -34,6 +44,7 @@ TWITTER_ACCESS_TOKEN_SECRET="your_access_token_secret"
 # Twitter Screen Name
 TWITTER_SCREEN_NAME="your_screen_name"
 ```
+
 
 ### コマンドの追加
 
